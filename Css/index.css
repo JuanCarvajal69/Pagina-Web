@@ -14,21 +14,24 @@ h1 {
 }
 
 .border {
-    
+
     border-radius: 15px;
-    
+
 }
-div{
-    margin:10%;
+
+div {
+    margin: 1%;
     border: solid 1px;
     border-radius: 10px;
     text-align: center;
     color: #909090;
+    width: 100%;
 }
 
 header {
     grid-area: cabeza;
-    background-color: rgb(189, 188, 188)
+    background: rgb(138, 138, 139);
+    background: radial-gradient(circle, rgb(160, 160, 161) 0%, rgb(228, 225, 225) 100%);
 }
 
 footer {
@@ -49,19 +52,16 @@ nav {
     display: flex;
     flex-direction: column;
     text-align: center;
-    
+
 }
 
 span {
     background-color: white;
-    margin-bottom: 5pxpx;
-    padding: 1 0px;
+    margin-bottom: 5px;
+    padding: 10px;
 }
 
-span:hover {
-    background-color: #34495e;
-    color: azure;
-}
+
 
 /*grid por areas*/
 #gridAreas {
@@ -76,12 +76,13 @@ span:hover {
         "pie"
         /*fila 4*/
     ;
-    grid-template-columns: 55vh;
-    grid-template-rows: 50px 15% 1fr 75px;
+    grid-template-columns: 100%;
+    grid-template-rows: 6% 200px 650px 70%;
     grid-column-gap: 10px;
     grid-row-gap: 10px;
 }
-h1{
+
+h1 {
     font-size: 20px;
 }
 
@@ -89,6 +90,7 @@ a {
     color: black;
     text-decoration: none;
     font-size: 15px;
+
 }
 
 a:hover {
@@ -96,6 +98,7 @@ a:hover {
     text-decoration: none;
     cursor: pointer;
 }
+
 span {
     background-color: white;
     margin-bottom: 10px;
@@ -107,16 +110,18 @@ span {
 
 p {
     color: black;
-    width: 60%;
+    width: 100%;
     text-align: center;
 
 
 }
+
 article {
-    
+
     text-align: center;
     margin: 10%;
 }
+
 footer {
     font-family: 'Moon Dance', cursive, bold;
     font-size: 18px;
@@ -128,14 +133,34 @@ footer {
     color: blue;
     border-radius: 10px;
 }
-.gridRepetitivo{
-    display: grid;
-        grid-template-columns: 50% 50%;
-        /*cantidad de repeticiones, tamaño*/
-        
-        
+
+a {
+
+    color: black;
+    text-decoration: none;
+    font-size: 100%;
 }
 
+a:hover {
+    color: white;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+span {
+    background-color: white;
+    margin-bottom: 10px;
+    padding: 20px;
+    border-top-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+
+}
+
+span:hover {
+
+    background: rgb(213, 212, 212);
+    background: radial-gradient(circle, rgba(116, 115, 115, 1) 5%, rgb(248, 247, 247) 100%);
+}
 
 
 
@@ -157,29 +182,28 @@ footer {
             /*fila 4*/
         ;
         grid-template-columns: 20% 76.5%;
-        grid-template-rows:80px 1fr 1fr 75px;
+        grid-template-rows: 80px 1fr 1fr 75px;
         grid-column-gap: 10px;
         grid-row-gap: 10px;
     }
-    h1{
+
+    .gridRepetitivo {
+        display: grid;
+        grid-template-columns: 25% 25% 25% 25%;
+        /*cantidad de repeticiones, tamaño*/
+        grid-template-rows: 40%;
+        grid-column-gap: 1.5%;
+        grid-row-gap: 1%;
+    }
+
+    /*Estilos generales*/
+    h1 {
         font-size: 30px;
     }
-    span {
-        background-color: white;
-        margin-bottom: 10px;
-        padding: 20px;
-        border-top-left-radius: 20px;
-        border-bottom-right-radius: 20px;
 
-    }
-    a {
-
-        color: black;
-        text-decoration: none;
-    }
     footer {
         font-family: 'Moon Dance', cursive, bold;
-        font-size: 18px; 
+        font-size: 18px;
         bottom: 0;
         width: 100%;
         height: 30px;
@@ -188,6 +212,7 @@ footer {
         color: blue;
         border-radius: 10px;
     }
+
     /*Flex*/
     .flexMenu {
         font-family: 'Work Sans', sans-serif;
@@ -202,27 +227,24 @@ footer {
         display: flex;
         flex-flow: row nowrap;
     }
+
     article {
         border-radius: 4px;
         margin: 5%;
         text-align: center;
-        
+
     }
+
     p {
         color: black;
         width: 100%;
         text-align: center;
-        
+
 
     }
 
-    .gridRepetitivo {
-        display: grid;
-        grid-template-columns: 25% 25% 25% 25%;
-        /*cantidad de repeticiones, tamaño*/
-        grid-template-rows:40% ;
-    }
-    
+
+
 
 }
 
@@ -231,55 +253,11 @@ footer {
 @media(min-width:1024px) {
     /*Estilos generales*/
 
-    a {
 
-        color: black;
-        text-decoration: none;
-        font-size: 120%;
+    h1 {
+        font-size: 30px;
     }
 
-    a:hover {
-        color: white;
-        text-decoration: none;
-        cursor: pointer;
-    }
-h1{
-    font-size: 30px;
-}
-    span {
-        background-color: white;
-        margin-bottom: 10px;
-        padding: 20px;
-        border-top-left-radius: 20px;
-        border-bottom-right-radius: 20px;
-
-    }
-
-    span:hover {
-        background-color: #34495e;
-
-
-    }
-
-    /*grid por areas*/
-    #gridAreas {
-        display: grid;
-        /*Estructura    */
-        grid-template-areas:
-            "cabeza cabeza cabeza"
-            /*fila 1*/
-            "menu productos productos"
-            /*fila 2*/
-            "menu productos productos"
-            /*fila 3*/
-            "pie pie pie"
-            /*fila 4*/
-        ;
-        grid-template-columns: 20% 27% 50% 10%;
-        grid-template-rows: 80px 1fr 1fr 75px;
-        grid-column-gap: 10px;
-        grid-row-gap: 10px;
-    }
 
     footer {
         font-family: 'Moon Dance', cursive, bold;
@@ -305,9 +283,54 @@ h1{
         color: black;
         width: 100%;
         text-align: center;
-        
 
 
+
+    }
+
+    a {
+
+        color: black;
+        text-decoration: none;
+        font-size: 120%;
+    }
+
+    img {
+        margin-top: 30%;
+    }
+
+    section {
+        margin-top: 5%;
+    }
+
+
+    /*grid por areas*/
+    #gridAreas {
+        display: grid;
+        /*Estructura    */
+        grid-template-areas:
+            "cabeza cabeza cabeza"
+            /*fila 1*/
+            "menu productos productos"
+            /*fila 2*/
+            "menu productos productos"
+            /*fila 3*/
+            "pie pie pie"
+            /*fila 4*/
+        ;
+        grid-template-columns: 20% 27% 50% 10%;
+        grid-template-rows: 80px 1fr 1fr 75px;
+        grid-column-gap: 10px;
+        grid-row-gap: 10px;
+    }
+
+    .gridRepetitivo {
+        display: grid;
+        grid-template-columns: 20% 20% repeat(2, 20%) 20%;
+        /*cantidad de repeticiones, tamaño*/
+        grid-template-rows: 40% repeat(10, 41%);
+        grid-column-gap: 1%;
+        grid-row-gap: 1%;
     }
 
     /*Flex*/
@@ -322,17 +345,11 @@ h1{
 
     .productosFlex {
         display: flex;
-    
+
     }
 
-    .gridRepetitivo {
-        display: grid;
-        grid-template-columns: 20% 20% repeat(2,20%) 20%;
-        /*cantidad de repeticiones, tamaño*/
-        grid-template-rows:40% repeat(10, 41%);
-    }
-    
-    img{
-        margin-top: 30%;
-    }
+
+
+
+
 }
