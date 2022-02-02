@@ -25,7 +25,7 @@ div {
     border-radius: 10px;
     text-align: center;
     color: #909090;
-    width: 100%;
+    width: 91%;
 }
 
 header {
@@ -54,12 +54,11 @@ nav {
     text-align: center;
 
 }
+iframe {
+    width: 100%;
+    height: 50vh;
+  }
 
-span {
-    background-color: white;
-    margin-bottom: 5px;
-    padding: 10px;
-}
 
 
 
@@ -77,35 +76,13 @@ span {
         /*fila 4*/
     ;
     grid-template-columns: 100%;
-    grid-template-rows: 6% 200px 650px 70%;
+    grid-template-rows: 6% 260px 900px 70%;
     grid-column-gap: 10px;
     grid-row-gap: 10px;
 }
 
 h1 {
     font-size: 20px;
-}
-
-a {
-    color: black;
-    text-decoration: none;
-    font-size: 15px;
-
-}
-
-a:hover {
-    color: #0b2df1;
-    text-decoration: none;
-    cursor: pointer;
-}
-
-span {
-    background-color: white;
-    margin-bottom: 10px;
-    padding: 5px;
-    border-top-left-radius: 20px;
-    border-bottom-right-radius: 20px;
-
 }
 
 p {
@@ -119,7 +96,7 @@ p {
 article {
 
     text-align: center;
-    margin: 10%;
+    
 }
 
 footer {
@@ -130,7 +107,7 @@ footer {
     height: 30px;
     text-align: right;
     background-color: rgb(189, 188, 188);
-    color: blue;
+    color: black;
     border-radius: 10px;
 }
 
@@ -156,11 +133,36 @@ span {
 
 }
 
+
 span:hover {
 
     background: rgb(213, 212, 212);
     background: radial-gradient(circle, rgba(116, 115, 115, 1) 5%, rgb(248, 247, 247) 100%);
 }
+form {
+    padding-top: 2%;
+    color: black;
+    text-align: center;
+    width: 98%;
+    margin-left: 0%;
+  
+  }
+  
+  fieldset {
+    padding-top: 2%;
+    padding-bottom: 2%;
+    height: 50vh;
+  }
+  
+  legend {
+    color: black;
+    font-size: 25px;
+    text-align: center;
+  }
+  
+  input {
+    margin-top: 2%;
+  }
 
 
 
@@ -182,7 +184,7 @@ span:hover {
             /*fila 4*/
         ;
         grid-template-columns: 20% 76.5%;
-        grid-template-rows: 80px 1fr 1fr 75px;
+        grid-template-rows: 8% 40% 42% 8%;
         grid-column-gap: 10px;
         grid-row-gap: 10px;
     }
@@ -209,7 +211,7 @@ span:hover {
         height: 30px;
         text-align: right;
         background-color: rgb(189, 188, 188);
-        color: blue;
+        color: black;
         border-radius: 10px;
     }
 
@@ -230,9 +232,9 @@ span:hover {
 
     article {
         border-radius: 4px;
-        margin: 5%;
+        margin: 0%;
         text-align: center;
-
+        padding: 1px;
     }
 
     p {
@@ -240,12 +242,44 @@ span:hover {
         width: 100%;
         text-align: center;
 
+    }
+    
 
+    .flex1 {
+        display: flex;
+        /*flex-direction: row;
+        flex-wrap: wrap;*/
+        flex-flow: column;
+        width: 100%;
+        height: 64vh;
     }
 
-
-
-
+    form {
+        padding-top: 10%;
+        color: black;
+        text-align: center;
+        width: 70%;
+        height: 100vh;
+        margin-left: 15%;
+    
+      }
+    
+      fieldset {
+        padding-top: 2%;
+        padding-bottom: 2%;
+        height: 50vh;
+      }
+    
+      legend {
+        color: black;
+        font-size: 25px;
+        text-align: center;
+      }
+    
+      input {
+        margin-top: 1%;
+        
+      }
 }
 
 
@@ -274,17 +308,18 @@ span:hover {
 
     article {
         border-radius: 4px;
-        margin: 5%;
+        margin-top: 18%;
+        margin-left: 1%;
         text-align: center;
+        
 
     }
 
     p {
         color: black;
-        width: 100%;
+        width: 99%;
         text-align: center;
-
-
+        padding: 1%;
 
     }
 
@@ -300,7 +335,11 @@ span:hover {
     }
 
     section {
-        margin-top: 5%;
+        margin-top: 0%;
+        margin-left: 2%;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
     }
 
 
@@ -319,14 +358,14 @@ span:hover {
             /*fila 4*/
         ;
         grid-template-columns: 20% 27% 50% 10%;
-        grid-template-rows: 80px 1fr 1fr 75px;
+        grid-template-rows: 8% 43% 43% 10%;
         grid-column-gap: 10px;
         grid-row-gap: 10px;
     }
 
     .gridRepetitivo {
         display: grid;
-        grid-template-columns: 20% 20% repeat(2, 20%) 20%;
+        grid-template-columns: 20% 20% repeat(1, 20%) 20%;
         /*cantidad de repeticiones, tamaño*/
         grid-template-rows: 40% repeat(10, 41%);
         grid-column-gap: 1%;
@@ -348,8 +387,135 @@ span:hover {
 
     }
 
+    /*Estilos html nosotros*/
 
 
+    
+
+
+
+/*Implementando flex para acomodar el contenido con el fin
+esperado*/
+.flex1 {
+    display: flex;
+    /*flex-direction: row;
+    flex-wrap: wrap;*/
+    flex-flow: nowrap;
+    width: 100%;
+    height: 80vh;
+
+
+}
+
+.flex2 {
+    display: flex;
+    /*flex-direction: row;
+    flex-wrap: wrap;*/
+    flex-flow: column;
+
+    width: 100%;
+    height: 64vh;
+
+}
+
+/*Estilos html encuentranos*/
+
+iframe {
+    width: 90%;
+    height: 50vh;
+  }
+
+  .gridRepetitivoEncuentranos {
+    display: grid;
+    grid-template-columns: 65% 35%;
+    
+  }
+
+  /*Estilos html contacto*/
+
+  form {
+    padding-top: 10%;
+    color: black;
+    text-align: center;
+    width: 50%;
+    margin-left: 15%;
+
+  }
+
+  fieldset {
+    padding-top: 2%;
+    padding-bottom: 2%;
+    height: 50vh;
+  }
+
+  legend {
+    color: black;
+    font-size: 25px;
+    text-align: center;
+  }
+
+  input {
+    margin-top: 2%;
+  }
+
+
+  /*Estilos html vista vehiculo*/
+  /*Ajustando el contenido dentro del flex implementado*/
+  
+  #imagen {
+    display: inline-block;
+    margin-left: 20%;
+    margin-top: 1%;
+    width: 50%;
+    height: 55vh;
+    align-items: center;
+    border: solid #777676 1px;
+    border-radius: 5px;
+
+
+}
+
+#precio {
+    display: block;
+    margin-left: 35%;
+    margin-top: 0%;
+    font-family: 'Work Sans', sans-serif;
+    font-size: 20px;
+    width: 20%;
+}
+
+#descripcion {
+    display: inline-block;
+    margin-left: 1%;
+    margin-top: 0%;
+    width: 35%;
+    height: 20vh;
+
+}
+
+#contacto {
+    display: inline-block;
+    margin-left: 20%;
+    margin-top: 0%;
+    width: 35%;
+    height: 20vh;
+
+
+}
+
+#img {
+    width: 70%;
+    height: 45vh;
+    margin-left: 0%;
+    margin-top: 0%;
+}
+#articlevh{
+        border-radius: 4px;
+        margin-top: 0%;
+        margin-left: 1%;
+        text-align: center;
+    
+}
 
 
 }
