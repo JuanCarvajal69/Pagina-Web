@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../Css/estilos.css" />
+    
     <title>Sobre Nosotros</title>
 
     <!--Tipos de fuentes-->
@@ -20,10 +20,16 @@
     <!--Animaciones-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
 
+
+    <!--Estilos BS Local-->
+    <link rel="stylesheet" href="../bootstrap-local/css/bootstrap.css">
+
+    <!--Estilos propios-->
+    <link rel="stylesheet" href="../Css/estilos.css">
 </head>
 
 <body id="gridAreas">
-    <header class="boder">
+    <header class="border">
         <h1 class="animate__animated animate__bounceInUp">Sobre Nosotros</h1>
     </header>
 
@@ -39,55 +45,45 @@
 
 
     <section class="border flex1 " id="productos">
-        <div class="animate__animated animate__flipInX">
+        
 
-            <h2>Nuestra historia</h2>
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Provident ipsum tempore laborum, nihil sed
-                corporis
-                perferendis accusamus accusantium inventore a! Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Explicabo deleniti, ducimus ad consequuntur fugit necessitatibus non officia nobis dicta numquam rerum,
-                cupiditate eum eligendi animi quaerat inventore cum consectetur tempore? Lorem ipsum dolor sit amet
-                consectetur adipis Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ducimus nulla rerum,
-                voluptas iste cupiditate natus nesciunt fugit quas quis eligendi, iure quae accusantium culpa tempore
-                assumenda consequuntur tenetur? Dolor, cumque. icing elit. Quis, aliquid totam deserunt consectetur
-                harum dicta vitae delectus
-                architecto quidem expedita, tenetur iste doloremque quos placeat neque fuga fugit eum molestias?</p>
-
-        </div>
-
-        <article class="flex2 animate__animated animate__rotateInUpRight">
-            <div>
-
-                <h2>Nuestra misión</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam corrupti libero voluptatum
-                    perspiciatis
-                    iure quisquam magnam qui Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta rerum non
-                    assumenda asperiores consectetur fuga vitae ad consequuntur, possimus expedita dolorem, eius
-                    incidunt? Architecto molestias alias veniam pariatur quam nam. recusandae reprehenderit
-                    placeat?Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat aspernatur ad cupiditate
-                    ullam distinctio tenetur, ipsa quis earum omnis atque laboriosam, delectus soluta aut sit quasi nisi
-                    vel non magni.</p>
-
+        <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
             </div>
-
-
-            <div>
-
-                <h2>Nuestra visión</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente quidem atque incidunt sunt
-                    aspernatur
-                    cum adipisci? Asperiores ea maxime hic! Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Iste totam non consequatur cumque quam assumenda soluta reprehenderit, atque modi, quidem, Lorem
-                    ipsum dolor sit amet consectetur adipisicing elit. Error, illo? Et, dolores repellat doloremque
-                    rerum dicta dolorum dolore optio, animi veniam autem ipsum libero laborum, dolor nobis! Iure,
-                    quaerat eos. voluptatem pariatur? Officia voluptas odit consequatur, in omnis laborum at?</p>
-
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <h2>Nuestra historia</h2>
+                <p style="width:75%; margin-left:11%">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore accusamus asperiores sequi esse odit, hic in nobis, ut non eligendi nesciunt! Ut quidem voluptates nemo dicta sequi! Esse, incidunt nobis!. Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed dolore nisi, explicabo repellendus quidem, accusamus obcaecati odit eligendi neque, delectus temporibus incidunt sapiente amet dolorum commodi error eius quaerat aliquid?</p>
+              </div>
+              <div class="carousel-item">
+                <h2>Nuestra Misión</h2>
+                <p style="width:75%; margin-left:11%">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aliquid totam illum molestias nulla? Dolores asperiores maiores blanditiis dicta illum ipsa autem facilis ex ducimus provident? Nisi voluptatum aspernatur animi aperiam!. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem assumenda repellendus deleniti excepturi sed cum cupiditate? Eligendi aliquam aspernatur blanditiis? Veniam provident quae repudiandae fugiat facilis alias, distinctio tempora ab.</p>
+              </div>
+              <div class="carousel-item">
+               <h2>Nuestra Visión</h2>
+               <p style="width:75%; margin-left:11%">Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus ullam commodi nisi aliquam, velit numquam impedit veniam voluptatibus optio doloremque ducimus, officiis quia distinctio eligendi ab sed error? Ipsum, porro. Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium dolorem dicta dignissimos amet impedit voluptatibus? Commodi aliquid voluptatum atque aspernatur voluptatibus nulla assumenda obcaecati. Voluptatibus non facilis illo fugit voluptas.</p>
+              </div>
             </div>
-        </article>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+          
+          
+
     </section>
 
     <footer class="animate__animated animate__bounceInUp">Made by Juan Fernando Carvajal</footer>
 
+    <script src="../bootstrap-local/js/bootstrap.js"></script>
 </body>
 
 </html>
