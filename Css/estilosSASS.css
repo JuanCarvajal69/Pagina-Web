@@ -26,3 +26,349 @@ span {
   span:hover {
     background: #d5d4d4;
     background: radial-gradient(circle, #747373 5%, #f8f7f7 100%); }
+
+h1 {
+  font-family: 'Work Sans', sans-serif;
+  text-align: center;
+  color: black; }
+
+.border {
+  border-radius: 15px; }
+
+.card {
+  margin-top: 5%; }
+
+section {
+  margin-top: 2%;
+  margin-left: 1%;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  grid-area: productos;
+  width: 95%;
+  margin-left: 2%; }
+  section div {
+    margin-left: 1%;
+    border-radius: 10px;
+    text-align: center;
+    color: #909090;
+    width: 90%; }
+    section div img {
+      height: 20vh; }
+
+/* MAPA */
+.boton-siguiente {
+  color: #3333d4; }
+
+.boton-atras {
+  color: chocolate; }
+
+.boton-general {
+  color: #b4b5b6; }
+
+/* APLICANDO EXTEND */
+.TituloVehiculos, .TituloVehiculos2 {
+  font-size: 110%;
+  text-align: left;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: #3333d4; }
+
+.TituloVehiculos2 {
+  color: chocolate; }
+
+/* APLICANDO MIXIN */
+.iframe {
+  margin-top: 20%;
+  margin-left: 5%; }
+
+header {
+  grid-area: cabeza;
+  background: #8a8a8b;
+  background: radial-gradient(circle, #a0a0a1 0%, #e4e1e1 100%); }
+  header h1 {
+    margin-top: 0%; }
+
+footer {
+  grid-area: pie;
+  font-family: 'Moon Dance', cursive, bold;
+  font-size: 120%;
+  bottom: 0;
+  width: 100%;
+  height: 30px;
+  text-align: right;
+  background-color: #bdbcbc;
+  color: black;
+  border-radius: 10px; }
+
+.imgCarrousel {
+  width: 50%;
+  height: 10%;
+  margin-left: 25%; }
+
+nav {
+  grid-area: menu; }
+
+/*Smartphone*/
+.flexMenu {
+  font-family: 'Work Sans', sans-serif;
+  display: flex;
+  flex-direction: column;
+  text-align: center; }
+
+iframe {
+  width: 100%;
+  height: 50vh; }
+
+/*grid por areas*/
+#gridAreas {
+  display: grid;
+  /*Estructura    */
+  grid-template-areas: "cabeza" "menu" "productos" "pie";
+  grid-template-columns: 100%;
+  grid-template-rows: 6% 35% 250% 70%;
+  grid-column-gap: 10px;
+  grid-row-gap: 10px; }
+
+#gridAreasNosotros {
+  display: grid;
+  /*Estructura    */
+  grid-template-areas: "cabeza" "menu" "productos" "pie";
+  grid-template-columns: 100%;
+  grid-template-rows: 6% 290px 70% 70%;
+  grid-column-gap: 10px;
+  grid-row-gap: 10px; }
+
+p {
+  color: black;
+  width: 100%;
+  text-align: center;
+  font-size: 80%; }
+
+article {
+  text-align: center; }
+
+form {
+  padding-top: 2%;
+  color: black;
+  text-align: center;
+  width: 98%;
+  margin-left: 0%; }
+
+fieldset {
+  padding-top: 2%;
+  padding-bottom: 2%;
+  height: 50vh; }
+
+legend {
+  color: black;
+  font-size: 25px;
+  text-align: center; }
+
+input {
+  margin-top: 2%; }
+
+/*Tablet*/
+@media (min-width: 480px) and (max-width: 1023px) {
+  /*grid por areas*/
+  #gridAreas {
+    /*Estructura    */
+    grid-template-areas: "cabeza cabeza " "menu productos " "menu productos " "pie pie";
+    grid-template-columns: 20% 76.5%;
+    grid-template-rows: 8% 50% 50% 5%; }
+  .gridRepetitivo {
+    display: grid;
+    grid-template-columns: 30% 30% 30%;
+    grid-template-rows: 50% 50%;
+    grid-column-gap: 1.5%;
+    grid-row-gap: 1%; }
+  /*Estilos generales*/
+  h1 {
+    font-size: 220%; }
+  footer {
+    font-family: 'Moon Dance', cursive, bold;
+    bottom: 0;
+    width: 100%;
+    height: 30px;
+    text-align: right;
+    background-color: #bdbcbc;
+    color: black;
+    border-radius: 10px; }
+  /*Flex*/
+  .flexMenu {
+    font-family: 'Work Sans', sans-serif;
+    display: flex;
+    flex-direction: column;
+    padding-top: 25vh;
+    text-align: center;
+    font-size: 100%; }
+  .productosFlex {
+    display: flex;
+    flex-flow: row nowrap; }
+  article {
+    border-radius: 4px;
+    margin: 0%;
+    text-align: center;
+    padding: 1px; }
+  p {
+    color: black;
+    width: 100%;
+    text-align: center; }
+  .flex1 {
+    display: flex;
+    flex-flow: column;
+    width: 100%;
+    height: 64vh; }
+  form {
+    padding-top: 10%;
+    color: black;
+    text-align: center;
+    width: 70%;
+    height: 100vh;
+    margin-left: 15%; }
+  fieldset {
+    padding-top: 2%;
+    padding-bottom: 2%;
+    height: 50vh; }
+  legend {
+    color: black;
+    font-size: 25px;
+    text-align: center; }
+  input {
+    margin-top: 1%; } }
+
+/*Desktop*/
+@media (min-width: 1024px) {
+  /*Estilos generales*/
+  h1 {
+    margin-top: 18px;
+    color: black; }
+  footer {
+    font-family: 'Moon Dance', cursive, bold;
+    padding-right: 10px;
+    bottom: 0;
+    width: 100%;
+    height: 40px;
+    text-align: right;
+    background-color: #bdbcbc;
+    color: black;
+    border-radius: 10px; }
+  article {
+    border-radius: 4px;
+    margin-top: 18%;
+    margin-left: 1%;
+    text-align: center; }
+  p {
+    color: black;
+    width: 100%;
+    text-align: left;
+    padding: 0; }
+  img {
+    margin-top: 0%;
+    width: 100%;
+    height: 50%; }
+  section {
+    margin-top: 0%;
+    margin-left: 1%;
+    justify-content: center;
+    align-items: center;
+    width: 100%; }
+  /*grid por areas*/
+  #gridAreas {
+    display: grid;
+    /*Estructura    */
+    grid-template-areas: "cabeza cabeza cabeza" "menu productos productos" "menu productos productos" "pie pie pie";
+    grid-template-columns: 20% 27% 50% 10%;
+    grid-template-rows: 8% 43% 43% 10%;
+    grid-column-gap: 10px;
+    grid-row-gap: 10px; }
+  .gridRepetitivo {
+    display: grid;
+    grid-template-columns: 22% 22% 22% 22%;
+    grid-template-rows: 47% repeat(3, 50%);
+    grid-column-gap: 2%;
+    grid-row-gap: 2%; }
+  /*Flex*/
+  .flexMenu {
+    font-family: 'Work Sans', sans-serif;
+    display: flex;
+    flex-direction: column;
+    padding-top: 25vh;
+    text-align: center;
+    font-size: 110%; }
+  .productosFlex {
+    display: flex; }
+  /*Estilos adcionales html nosotros*/
+  /*Implementando flex para acomodar el contenido con el fin
+esperado*/
+  .flex1 {
+    display: flex;
+    width: 100%; }
+  .flex2 {
+    display: flex;
+    flex-flow: column;
+    width: 100%;
+    height: 64vh; }
+  /*Estilos adcionales html encuentranos*/
+  iframe {
+    width: 90%;
+    height: 50vh; }
+  .gridRepetitivoEncuentranos {
+    display: grid;
+    grid-template-columns: 65% 35%;
+    grid-template-rows: 90%; }
+  /*Estilos adcionales html contacto*/
+  form {
+    padding-top: 10%;
+    color: black;
+    text-align: center;
+    width: 50%;
+    margin-left: 15%; }
+  fieldset {
+    padding-top: 2%;
+    padding-bottom: 2%;
+    height: 50vh; }
+  legend {
+    color: black;
+    font-size: 25px;
+    text-align: center; }
+  input {
+    margin-top: 2%; }
+  /*Estilos adcionales html vista vehiculo*/
+  /*Ajustando el contenido dentro del flex implementado*/
+  #imagen {
+    display: inline-block;
+    margin-left: 20%;
+    margin-top: 1%;
+    width: 50%;
+    height: 55vh;
+    align-items: center;
+    border-radius: 5px; }
+  #precio {
+    display: block;
+    margin-left: 35%;
+    margin-top: 0%;
+    font-family: 'Work Sans', sans-serif;
+    font-size: 20px;
+    width: 20%; }
+  #descripcion {
+    display: inline-block;
+    margin-left: 1%;
+    margin-top: 0%;
+    width: 35%;
+    height: 20vh; }
+  #contacto {
+    display: inline-block;
+    margin-left: 20%;
+    margin-top: 0%;
+    width: 35%;
+    height: 20vh; }
+  #img {
+    width: 70%;
+    height: 45vh;
+    margin-left: 0%;
+    margin-top: 0%; }
+  #articlevh {
+    border-radius: 4px;
+    margin-top: 0%;
+    margin-left: 1%;
+    text-align: center; } }
