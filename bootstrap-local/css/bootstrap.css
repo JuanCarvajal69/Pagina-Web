@@ -666,9 +666,9 @@ progress {
   --bs-gutter-y: 0;
   display: flex;
   flex-wrap: wrap;
-  margin-top: calc(-1 * var(--bs-gutter-y));
+  margin-top: calc(0 * var(--bs-gutter-y));
   margin-right: calc(-0.5 * var(--bs-gutter-x));
-  margin-left: calc(-0.5 * var(--bs-gutter-x));
+  margin-left: calc(1 * var(--bs-gutter-x));
 }
 .row > * {
   flex-shrink: 0;
@@ -2479,11 +2479,12 @@ textarea.form-control-lg {
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
-  -webkit-print-color-adjust: exact;
+  -webkit-print-color-adjust:exact;
   color-adjust: exact;
 }
 .form-check-input[type=checkbox] {
   border-radius: 0.25em;
+  
 }
 .form-check-input[type=radio] {
   border-radius: 50%;
@@ -2994,6 +2995,7 @@ textarea.form-control-lg {
 @media (prefers-reduced-motion: reduce) {
   .btn {
     transition: none;
+    
   }
 }
 .btn:hover {
@@ -3009,8 +3011,8 @@ textarea.form-control-lg {
 }
 
 .btn-primary {
-  color: #fff;
-  background-color: #b4b5b6;
+  color: rgb(248, 247, 247);
+  background-color: #ecbab5;
   border-color: #b4b5b6;
 }
 .btn-primary:hover {
@@ -4497,9 +4499,7 @@ textarea.form-control-lg {
   background-clip: border-box;
   border: 1px solid rgba(0, 0, 0, 0.125);
   border-radius: 0.25rem;
-  margin-top: 5%;
- 
-  
+  width: 100%;
 }
 .card > hr {
   margin-right: 0;
@@ -4508,6 +4508,7 @@ textarea.form-control-lg {
 .card > .list-group {
   border-top: inherit;
   border-bottom: inherit;
+  
 }
 .card > .list-group:first-child {
   border-top-width: 0;
@@ -4526,7 +4527,9 @@ textarea.form-control-lg {
 
 .card-body {
   flex: 1 1 auto;
-  padding: 1rem 1rem;
+  padding: 5% 5%;
+  height: 100%;
+  word-wrap: break-word;
 }
 
 .card-title {
@@ -4540,6 +4543,7 @@ textarea.form-control-lg {
 
 .card-text:last-child {
   margin-bottom: 0;
+  
 }
 
 .card-link + .card-link {
@@ -5045,6 +5049,8 @@ textarea.form-control-lg {
   padding-left: 0;
   margin-bottom: 0;
   border-radius: 0.25rem;
+  width: 110%;
+  
 }
 
 .list-group-numbered {
@@ -6121,6 +6127,7 @@ textarea.form-control-lg {
   display: flex;
   justify-content: center;
   padding: 0;
+  transform: translate(0,200%);
   margin-right: 15%;
   margin-bottom: 1rem;
   margin-left: 15%;
@@ -6136,7 +6143,7 @@ textarea.form-control-lg {
   margin-left: 3px;
   text-indent: -999px;
   cursor: pointer;
-  background-color: #fff;
+  background-color: rgba(241,58,58,1);
   background-clip: padding-box;
   border: 0;
   border-top: 10px solid transparent;

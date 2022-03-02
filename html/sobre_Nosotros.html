@@ -26,6 +26,9 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@200&display=swap" rel="stylesheet">
 
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
   <!--Animaciones-->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
 
@@ -39,10 +42,11 @@
 </head>
 
 
-<body id="gridAreas" style="grid-template-rows: 6% 35% 50% 70%;">
+<body id="gridAreas" class="largo">
   
   <!--TÍTULO-->
   <header class="border">
+    <img src="https://compraventascp.com/app/imagenes/logo.png" alt="" class="animate__animated animate__bounceInDown">
     <h1 class="animate__animated animate__bounceInUp">Sobre Nosotros</h1>
   </header>
 
@@ -51,7 +55,7 @@
   <!--MENU-->
   <nav class="flexMenu animate__animated animate__backInLeft">
 
-    <span><a href="../index.html">Inicio </a></span>
+    <span style="margin-top: 5%;"><a href="../index.html">Inicio </a></span>
     <span><a href="Sobre_Nosotros.html">Sobre Nosotros</a></span>
     <span><a href="./Encuentranos.html">Encuéntranos </a></span>
     <span><a href="Contacto.html">Contacto</a></span>
@@ -61,12 +65,11 @@
 
 
   <!--CONTENIDO-->
-  <section class="border flex1 " id="productos">
-
+  <section class=" flex1 " id="productos" style="display: block;">
 
     <div id="carouselExampleIndicators" class="animate__animated animate__bounceInUp carousel slide "
-      data-bs-ride="carousel">
-      <div class="carousel-indicators">
+      data-bs-ride="carousel" >
+      <div class="carousel-indicators" style="width: 75%;">
         <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
           aria-current="true" aria-label="Slide 1"></button>
         <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
@@ -74,8 +77,8 @@
         <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
           aria-label="Slide 3"></button>
       </div>
-      <div class="carousel-inner">
-        <div class="carousel-item active">
+      <div class="carousel-inner" style="justify-content: center;" >
+        <div class="carousel-item active" style="justify-content: center;">
           <img src="https://images.vexels.com/media/users/3/147726/isolated/preview/3c35c23c922833a71a94e7d5faf28b88-logotipo-del-servicio-de-venta-de-coches.png" class="d-block w-100, imgCarrousel" alt="..." >
           
             <h2>Nuestra historia</h2>
@@ -118,9 +121,13 @@
         <span class="carousel-control-next-icon" aria-hidden="true"></span>
         <span class="visually-hidden">Next</span>
       </button>
+
+      
     </div>
-
-
+    <div >
+      <p class="DivSlogan">"Nuestro cliente siempre obtiene lo que quiere"</p>
+    </div>
+    
 
   </section>
 
@@ -128,7 +135,7 @@
 
   <!--PIE DE PÁGINA-->
 
-  <footer class="animate__animated animate__bounceInUp">Made by Juan Fernando Carvajal</footer>
+  <footer class="animate__animated animate__bounceInUp" style="margin-top: 2;" ><a target="_Blank" href="http://www.linkedin.com/in/juan-fernando-carvajal-chavarría"> Made by Juan Fernando Carvajal</a></footer>
 
 
   <!--LIBRERÍA JS-->

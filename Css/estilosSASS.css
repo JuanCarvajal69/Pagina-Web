@@ -3,52 +3,48 @@
 Estilos Generales
 
 ******************************/
+html {
+  min-height: 100%;
+  position: relative; }
+
 body {
+  margin: 0;
   width: 100%;
-  height: 100vh;
   background-color: #f8f8f8; }
 
 a {
-  color: black;
+  color: white;
   text-decoration: none;
   font-size: 100%; }
   a:hover {
-    color: white;
+    color: black;
     text-decoration: none;
     cursor: pointer; }
 
 span {
-  background-color: #e0dada;
+  background-color: #211e54;
   margin-bottom: 10px;
   padding: 20px;
   border-top-left-radius: 20px;
   border-bottom-right-radius: 20px; }
   span:hover {
-    background: #d5d4d4;
-    background: radial-gradient(circle, #747373 5%, #f8f7f7 100%); }
-
-h1 {
-  font-family: 'Work Sans', sans-serif;
-  text-align: center;
-  color: black; }
+    background: #eeeeee;
+    background: radial-gradient(circle, #eeeeee 0%, #2e2c53 100%); }
+    span:hover a {
+      color: black; }
 
 .border {
   border-radius: 15px; }
 
-.card {
-  margin-top: 5%; }
+.largo {
+  height: 100%; }
 
 section {
-  margin-top: 2%;
-  margin-left: 1%;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
+  margin-top: 0%;
+  width: 97%;
   grid-area: productos;
-  width: 95%;
-  margin-left: 2%; }
+  margin-left: 6%; }
   section div {
-    margin-left: 1%;
     border-radius: 10px;
     text-align: center;
     color: #909090;
@@ -56,54 +52,86 @@ section {
     section div img {
       height: 20vh; }
 
+.sectionMargin {
+  margin-left: 0%; }
+
+ul {
+  text-align: left;
+  color: black; }
+
 /* MAPA */
-.boton-siguiente {
-  color: #3333d4; }
+.link-Facebook {
+  background-color: #3b5998; }
 
-.boton-atras {
-  color: chocolate; }
+.link-Instagram {
+  background-color: #F58529; }
 
-.boton-general {
-  color: #b4b5b6; }
+.link-WhatsApp {
+  background-color: #00bb2d; }
 
 /* APLICANDO EXTEND */
 .TituloVehiculos, .TituloVehiculos2 {
+  display: flex;
   font-size: 110%;
   text-align: left;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
-  color: #3333d4; }
+  color: #3333d4;
+  justify-content: center; }
 
 .TituloVehiculos2 {
   color: chocolate; }
 
 /* APLICANDO MIXIN */
 .iframe {
-  margin-top: 20%;
+  margin-top: 6%;
   margin-left: 5%; }
 
 header {
   grid-area: cabeza;
-  background: #8a8a8b;
-  background: radial-gradient(circle, #a0a0a1 0%, #e4e1e1 100%); }
+  width: 100%;
+  background: #211e54;
+  background: linear-gradient(90deg, #211e54 0%, #e5e5ed 50%, #f13a3a 100%);
+  align-items: center;
+  display: flex; }
+  header img {
+    width: 15%;
+    height: 80%; }
   header h1 {
-    margin-top: 0%; }
+    display: inline-block;
+    font-family: 'Work Sans', sans-serif;
+    text-align: center;
+    color: black; }
 
 footer {
   grid-area: pie;
   font-family: 'Moon Dance', cursive, bold;
+  position: absolute;
   font-size: 120%;
   bottom: 0;
   width: 100%;
   height: 30px;
+  margin-top: 1%;
   text-align: right;
-  background-color: #bdbcbc;
-  color: black;
-  border-radius: 10px; }
+  background: #211e54;
+  background: linear-gradient(90deg, #211e54 0%, #e5e5ed 50%, #f13a3a 100%);
+  color: white; }
 
 .imgCarrousel {
-  width: 50%;
+  width: 40%;
   height: 10%;
-  margin-left: 25%; }
+  margin-left: 30%; }
+
+.marginFormulario {
+  margin-top: 5%; }
+
+.DivSlogan {
+  display: flex;
+  position: relative;
+  transform: translate(0, 200%);
+  justify-content: center;
+  margin-top: 0%;
+  font-family: 'Lobster', cursive;
+  font-size: 100%; }
 
 nav {
   grid-area: menu; }
@@ -119,15 +147,27 @@ iframe {
   width: 100%;
   height: 50vh; }
 
-/*grid por areas*/
-#gridAreas {
-  display: grid;
-  /*Estructura    */
-  grid-template-areas: "cabeza" "menu" "productos" "pie";
-  grid-template-columns: 100%;
-  grid-template-rows: 6% 35% 250% 70%;
-  grid-column-gap: 10px;
-  grid-row-gap: 10px; }
+.estiloRedes {
+  bottom: 0;
+  width: 100%;
+  height: 10%;
+  text-align: center;
+  color: black;
+  margin-top: 5%;
+  border: black; }
+
+.redes {
+  width: 100%;
+  height: 50%;
+  font-size: 100%;
+  align-content: center; }
+  .redes a {
+    display: inline;
+    border-radius: 5px;
+    align-items: center;
+    font-size: 100%;
+    width: 10%;
+    margin: 1%; }
 
 #gridAreasNosotros {
   display: grid;
@@ -167,13 +207,27 @@ legend {
 input {
   margin-top: 2%; }
 
+#redes {
+  grid-area: redes; }
+
+.horario {
+  font-size: 100%;
+  display: flex;
+  color: white;
+  justify-content: center;
+  border-radius: 10px;
+  border-style: double;
+  border-color: #ec7c72;
+  background-color: #f3d2cf;
+  width: 100%; }
+
 /*Tablet*/
 @media (min-width: 480px) and (max-width: 1023px) {
   /*grid por areas*/
   #gridAreas {
     /*Estructura    */
-    grid-template-areas: "cabeza cabeza " "menu productos " "menu productos " "pie pie";
-    grid-template-columns: 20% 76.5%;
+    grid-template-areas: "cabeza cabeza " "menu productos " "menu productos " "redes redes" "pie pie";
+    grid-template-columns: 25% 76.5%;
     grid-template-rows: 8% 50% 50% 5%; }
   .gridRepetitivo {
     display: grid;
@@ -184,23 +238,13 @@ input {
   /*Estilos generales*/
   h1 {
     font-size: 220%; }
-  footer {
-    font-family: 'Moon Dance', cursive, bold;
-    bottom: 0;
-    width: 100%;
-    height: 30px;
-    text-align: right;
-    background-color: #bdbcbc;
-    color: black;
-    border-radius: 10px; }
   /*Flex*/
   .flexMenu {
     font-family: 'Work Sans', sans-serif;
     display: flex;
     flex-direction: column;
-    padding-top: 25vh;
     text-align: center;
-    font-size: 100%; }
+    font-size: 150%; }
   .productosFlex {
     display: flex;
     flex-flow: row nowrap; }
@@ -213,11 +257,19 @@ input {
     color: black;
     width: 100%;
     text-align: center; }
+  header img {
+    margin-left: 25%;
+    width: 12%;
+    height: 90%; }
   .flex1 {
     display: flex;
     flex-flow: column;
     width: 100%;
-    height: 64vh; }
+    height: 56%; }
+  .DivSlogan {
+    transform: translate(0, 500%);
+    margin-top: 0%;
+    font-size: 120%; }
   form {
     padding-top: 10%;
     color: black;
@@ -234,24 +286,15 @@ input {
     font-size: 25px;
     text-align: center; }
   input {
-    margin-top: 1%; } }
+    margin-top: 1%; }
+  .marginFormulario {
+    margin-top: 8%; }
+  .estiloRedes {
+    margin-top: 0%; } }
 
 /*Desktop*/
 @media (min-width: 1024px) {
   /*Estilos generales*/
-  h1 {
-    margin-top: 18px;
-    color: black; }
-  footer {
-    font-family: 'Moon Dance', cursive, bold;
-    padding-right: 10px;
-    bottom: 0;
-    width: 100%;
-    height: 40px;
-    text-align: right;
-    background-color: #bdbcbc;
-    color: black;
-    border-radius: 10px; }
   article {
     border-radius: 4px;
     margin-top: 18%;
@@ -266,25 +309,28 @@ input {
     margin-top: 0%;
     width: 100%;
     height: 50%; }
-  section {
-    margin-top: 0%;
-    margin-left: 1%;
-    justify-content: center;
-    align-items: center;
+  header img {
+    width: 7%;
+    margin-left: 37%; }
+  div {
+    display: block;
     width: 100%; }
+  h3 {
+    align-items: center;
+    display: block; }
   /*grid por areas*/
   #gridAreas {
     display: grid;
     /*Estructura    */
-    grid-template-areas: "cabeza cabeza cabeza" "menu productos productos" "menu productos productos" "pie pie pie";
-    grid-template-columns: 20% 27% 50% 10%;
-    grid-template-rows: 8% 43% 43% 10%;
+    grid-template-areas: "cabeza cabeza cabeza" "menu productos productos" "menu productos productos" "redes redes redes" "pie pie pie";
+    grid-template-columns: 20% 29% 50%;
+    grid-template-rows: 8% auto auto auto 5%;
     grid-column-gap: 10px;
     grid-row-gap: 10px; }
   .gridRepetitivo {
     display: grid;
     grid-template-columns: 22% 22% 22% 22%;
-    grid-template-rows: 47% repeat(3, 50%);
+    grid-template-rows: 55% 55%;
     grid-column-gap: 2%;
     grid-row-gap: 2%; }
   /*Flex*/
@@ -294,10 +340,19 @@ input {
     flex-direction: column;
     padding-top: 25vh;
     text-align: center;
-    font-size: 110%; }
+    font-size: 110%;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 20px; }
   .productosFlex {
     display: flex; }
+  .row {
+    margin-left: calc(3 * var(--bs-gutter-x)); }
   /*Estilos adcionales html nosotros*/
+  .DivSlogan {
+    transform: translate(0, 400%);
+    margin-top: 0%;
+    font-size: 120%; }
   /*Implementando flex para acomodar el contenido con el fin
 esperado*/
   .flex1 {
@@ -317,22 +372,24 @@ esperado*/
     grid-template-columns: 65% 35%;
     grid-template-rows: 90%; }
   /*Estilos adcionales html contacto*/
-  form {
-    padding-top: 10%;
-    color: black;
-    text-align: center;
-    width: 50%;
-    margin-left: 15%; }
-  fieldset {
-    padding-top: 2%;
-    padding-bottom: 2%;
-    height: 50vh; }
-  legend {
-    color: black;
-    font-size: 25px;
-    text-align: center; }
   input {
     margin-top: 2%; }
+  .estiloRedes {
+    margin-top: 2%; }
+  .redes {
+    align-content: center; }
+    .redes a {
+      display: inline-block;
+      border-radius: 10px;
+      align-items: center;
+      width: 20%;
+      font-size: 150%; }
+  .colorBotones {
+    background-color: #211e54; }
+  .colorCheck {
+    border-color: #211e54; }
+  .marginFormulario {
+    margin-top: 10%; }
   /*Estilos adcionales html vista vehiculo*/
   /*Ajustando el contenido dentro del flex implementado*/
   #imagen {
