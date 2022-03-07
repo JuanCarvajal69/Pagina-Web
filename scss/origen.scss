@@ -66,61 +66,12 @@ section {
         }
     }
 }
-.sectionMargin{
-    margin-left: 0%;
-}
-
 
 ul{
     text-align: left;
     color: black;
 
 }
-
-/* MAPA */
-$colores:(
-    Facebook:#3b5998,
-    Instagram: #F58529,
-    WhatsApp:#00bb2d
-);
-@each $clave,$valor in $colores {
-    .link-#{$clave}{
-        background-color: $valor;
-    }
-    
-}
-
-
-.section-vehiculo{
-    margin-left: 1.5%;
-    height: 80vh;
-}
-
-/* APLICANDO EXTEND */
-
-.TituloVehiculos{
-    display: flex;
-    font-size: 110%;
-    text-align: left;
-    font-family:Verdana, Geneva, Tahoma, sans-serif;
-    color: rgb(51, 51, 212);
-    justify-content: center;
-}
-.TituloVehiculos2{
-    @extend .TituloVehiculos;
-    color: chocolate;
-}
-
-/* APLICANDO MIXIN */
-@mixin iframe__($m_top, $m_left) {
-    margin-top: $m_top;
-    margin-left: $m_left;
-}
-
-.iframe {
-    @include iframe__(6%, 5%)
-}
-
 
 header {
     grid-area: cabeza;
@@ -157,99 +108,10 @@ footer {
     color: white;
     
 }
-
-.imgCarrousel{
-    width: 40%;
-    height: 10%;
-    margin-left: 30%;
-    
-    
-}
-
-.marginFormulario{
-    margin-top: 5%;
-}
-.DivSlogan{
-    display: flex;
-    width: 100%;
-    transform: translate(0,-50%);
-    position: relative;
-    justify-content: center;
-    margin-top: 20%;
-    font-family: 'Lobster', cursive;
-    font-size: 100%;
-   
-    p{
-        
-        text-align: center;
-    }
-}
-
-nav {
-    grid-area: menu;
-}
-
-
-/*Smartphone*/
-.flexMenu {
-    font-family: 'Work Sans', sans-serif;
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    
-}
-
 iframe {
     width: 100%;
     height: 50vh;
 }
-
-.estiloRedes{
-        
-    bottom: 0;
-    width: 100%;
-    height: 10%;
-    text-align: center;
-    color: black;
-    margin-top: 5%;
-    border: black;
-    
-    
-}
-.redes{
-    width: 100%;
-    height: 10vh;
-    font-size: 100%;
-    align-content: center;
-    a{
-        display: inline;
-        border-radius: 5px;
-        align-items: center;
-        font-size: 100%;
-        width: 10%;
-        margin: 1%;
-    }
-}
-
-
-#gridAreasNosotros {
-    display: grid;
-    /*Estructura    */
-    grid-template-areas:
-        "cabeza"
-        /*fila 1*/
-        "menu"
-        "productos"
-        /*fila 2*/
-        "pie"
-        /*fila 4*/
-    ;
-    grid-template-columns: 100%;
-    grid-template-rows: 6% 290px 70% 70%;
-    grid-column-gap: 10px;
-    grid-row-gap: 10px;
-}
-
 
 p {
     color: black;
@@ -289,6 +151,152 @@ legend {
 input {
     margin-top: 2%;
 }
+
+/* MAPA */
+/*Se aplica para aignar los colores a los botones de contacto*/
+$colores:(
+    Facebook:#3b5998,
+    Instagram: #F58529,
+    WhatsApp:#00bb2d
+);
+@each $clave,$valor in $colores {
+    .link-#{$clave}{
+        background-color: $valor;
+    }
+    
+}
+
+
+
+/* APLICANDO EXTEND */
+.TituloVehiculos{
+    display: flex;
+    font-size: 110%;
+    text-align: left;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    color: rgb(51, 51, 212);
+    justify-content: center;
+}
+.TituloVehiculos2{
+    @extend .TituloVehiculos;
+    color: chocolate;
+}
+
+/* APLICANDO MIXIN */
+@mixin iframe__($m_top, $m_left) {
+    margin-top: $m_top;
+    margin-left: $m_left;
+}
+
+.iframe {
+    @include iframe__(6%, 5%)
+}
+
+
+
+/*Ajustando el carrousel*/
+.imgCarrousel{
+    width: 40%;
+    height: 10%;
+    margin-left: 30%;
+    
+    
+}
+
+.marginFormulario{
+    margin-top: 5%;
+}
+
+
+/*Ajustando frase en la pagina sobre nosotros*/
+.DivSlogan{
+    display: flex;
+    width: 100%;
+    transform: translate(0,-50%);
+    position: relative;
+    justify-content: center;
+    margin-top: 20%;
+    font-family: 'Lobster', cursive;
+    font-size: 100%;
+   
+    p{
+        
+        text-align: center;
+    }
+}
+
+
+
+
+
+.flexMenu {
+    font-family: 'Work Sans', sans-serif;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    
+}
+
+/* Clases generales */
+.sectionMargin{
+    margin-left: 0%;
+}
+.section-vehiculo{
+    margin-left: 1.5%;
+    height: 80vh;
+}
+.estiloRedes{
+        
+    bottom: 0;
+    width: 100%;
+    height: 10%;
+    text-align: center;
+    color: black;
+    margin-top: 5%;
+    border: black;
+    
+    
+}
+.redes{
+    width: 100%;
+    height: 10vh;
+    font-size: 100%;
+    align-content: center;
+    a{
+        display: inline;
+        border-radius: 5px;
+        align-items: center;
+        font-size: 100%;
+        width: 10%;
+        margin: 1%;
+    }
+}
+
+/*Grid Areas */
+nav {
+    grid-area: menu;
+}
+
+#gridAreasNosotros {
+    display: grid;
+    /*Estructura    */
+    grid-template-areas:
+        "cabeza"
+        /*fila 1*/
+        "menu"
+        "productos"
+        /*fila 2*/
+        "pie"
+        /*fila 4*/
+    ;
+    grid-template-columns: 100%;
+    grid-template-rows: 6% 290px 70% 70%;
+    grid-column-gap: 10px;
+    grid-row-gap: 10px;
+}
+
+
+
 
 #redes{
     grid-area: redes;
@@ -342,24 +350,6 @@ input {
         font-size: 220%;
         
     }
-
-    
-
-    /*Flex*/
-    .flexMenu {
-        font-family: 'Work Sans', sans-serif;
-        display: flex;
-        flex-direction: column;
-        text-align: center;
-        font-size: 150%;
-        
-    }
-
-    .productosFlex {
-        display: flex;
-        flex-flow: row nowrap;
-    }
-
     article {
         border-radius: 4px;
         margin: 0%;
@@ -371,20 +361,6 @@ input {
         color: black;
         width: 100%;
         text-align: center;
-
-    }
-    
-
-    .flex1 {
-        display: flex;
-        flex-flow: column;
-        width: 100%;
-        height: 56%;
-    }
-    .DivSlogan{
-        transform: translate(0,200%);
-        margin-top: 0%;
-        font-size: 120%;
     }
     form {
         padding-top: 10%;
@@ -393,7 +369,6 @@ input {
         width: 70%;
         height: 100vh;
         margin-left: 15%;
-
     }
 
     fieldset {
@@ -413,6 +388,18 @@ input {
 
     }
 
+    /*Clases especificas*/
+    .flex1 {
+        display: flex;
+        flex-flow: column;
+        width: 100%;
+        height: 56%;
+    }
+    .DivSlogan{
+        transform: translate(0,200%);
+        margin-top: 0%;
+        font-size: 120%;
+    }
     .marginFormulario{
         margin-top: 8%;
     }
@@ -422,15 +409,26 @@ input {
     .section-vehiculo{
         height: 55vh;
     }
+    /*Flex*/
+    .flexMenu {
+        font-family: 'Work Sans', sans-serif;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        font-size: 150%;
+        
+    }
+
+    .productosFlex {
+        display: flex;
+        flex-flow: row nowrap;
+    }
 }
 
 
 /*Desktop*/
 @media(min-width:1024px) {
     /*Estilos generales*/
-
-    
-
     article {
         border-radius: 4px;
         margin-top: 18%;
@@ -446,19 +444,11 @@ input {
         padding: 0;
 
     }
-
-
-
     img {
         margin-top: 0%;
         width: 100%;
         height: 50%;
-    }
-
-
-    
-    
-        
+    } 
     div{
         display: block;
         width: 100%;
@@ -467,8 +457,6 @@ input {
         align-items: center;
         display: block;
         }
-        
-        
 
     /*grid por areas*/
     #gridAreas {
@@ -516,7 +504,7 @@ input {
         display: flex;
 
     }
-    
+    /*Modificando tamaños del grid en bootstrap*/
    .row{
     margin-left: calc(3 * var(--bs-gutter-x));
    }
