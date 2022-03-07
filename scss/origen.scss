@@ -48,10 +48,6 @@ span {
     border-radius: 15px;
 }
 
-.largo{
-    height: 100%;
-}
-
 section {
     margin-top: 0%;
     width: 97%;
@@ -95,6 +91,11 @@ $colores:(
 }
 
 
+.section-vehiculo{
+    margin-left: 1.5%;
+    height: 80vh;
+}
+
 /* APLICANDO EXTEND */
 
 .TituloVehiculos{
@@ -127,6 +128,7 @@ header {
     background: rgb(33,30,84);
     background: linear-gradient(90deg, rgba(33,30,84,1) 0%, rgba(229,229,237,1) 50%, rgba(241,58,58,1) 100%);
     align-items: center;
+    justify-content: center; 
     display: flex;
 img{
         width: 15%;
@@ -169,12 +171,18 @@ footer {
 }
 .DivSlogan{
     display: flex;
+    width: 100%;
+    transform: translate(0,-50%);
     position: relative;
-    transform: translate(0,200%);
     justify-content: center;
-    margin-top: 0%;
+    margin-top: 20%;
     font-family: 'Lobster', cursive;
     font-size: 100%;
+   
+    p{
+        
+        text-align: center;
+    }
 }
 
 nav {
@@ -210,7 +218,7 @@ iframe {
 }
 .redes{
     width: 100%;
-    height: 50%;
+    height: 10vh;
     font-size: 100%;
     align-content: center;
     a{
@@ -365,13 +373,7 @@ input {
         text-align: center;
 
     }
-    header{
-        img{
-            margin-left: 25%;
-            width: 12%;
-            height: 90%;
-        }
-    }
+    
 
     .flex1 {
         display: flex;
@@ -380,7 +382,7 @@ input {
         height: 56%;
     }
     .DivSlogan{
-        transform: translate(0,500%);
+        transform: translate(0,200%);
         margin-top: 0%;
         font-size: 120%;
     }
@@ -417,6 +419,9 @@ input {
     .estiloRedes{
         margin-top: 0%;
     }
+    .section-vehiculo{
+        height: 55vh;
+    }
 }
 
 
@@ -451,12 +456,7 @@ input {
     }
 
 
-    header{
-        img{
-            width: 7%;
-            margin-left: 37%;
-        }
-    }
+    
     
         
     div{
@@ -525,9 +525,8 @@ input {
     /*Estilos adcionales html nosotros*/
     
     .DivSlogan{
-        transform: translate(0,400%);
-        margin-top: 0%;
-        font-size: 120%;
+        margin-top: 6%;
+        font-size: 150%;
     }
 
     /*Implementando flex para acomodar el contenido con el fin
@@ -566,7 +565,7 @@ esperado*/
         margin-top: 2%;
     }
     .estiloRedes{
-        margin-top: 2%;
+        margin-top: 5%;
     }
     .redes{
         align-content: center;
@@ -643,7 +642,10 @@ esperado*/
         margin-top: 0%;
         margin-left: 1%;
         text-align: center;
-
+       
+    }
+    .section-vehiculo{
+        margin-top: 2%;
     }
 
 

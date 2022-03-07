@@ -36,9 +36,6 @@ span {
 .border {
   border-radius: 15px; }
 
-.largo {
-  height: 100%; }
-
 section {
   margin-top: 0%;
   width: 97%;
@@ -69,6 +66,10 @@ ul {
 .link-WhatsApp {
   background-color: #00bb2d; }
 
+.section-vehiculo {
+  margin-left: 1.5%;
+  height: 80vh; }
+
 /* APLICANDO EXTEND */
 .TituloVehiculos, .TituloVehiculos2 {
   display: flex;
@@ -92,6 +93,7 @@ header {
   background: #211e54;
   background: linear-gradient(90deg, #211e54 0%, #e5e5ed 50%, #f13a3a 100%);
   align-items: center;
+  justify-content: center;
   display: flex; }
   header img {
     width: 15%;
@@ -126,12 +128,15 @@ footer {
 
 .DivSlogan {
   display: flex;
+  width: 100%;
+  transform: translate(0, -50%);
   position: relative;
-  transform: translate(0, 200%);
   justify-content: center;
-  margin-top: 0%;
+  margin-top: 20%;
   font-family: 'Lobster', cursive;
   font-size: 100%; }
+  .DivSlogan p {
+    text-align: center; }
 
 nav {
   grid-area: menu; }
@@ -158,7 +163,7 @@ iframe {
 
 .redes {
   width: 100%;
-  height: 50%;
+  height: 10vh;
   font-size: 100%;
   align-content: center; }
   .redes a {
@@ -257,17 +262,13 @@ input {
     color: black;
     width: 100%;
     text-align: center; }
-  header img {
-    margin-left: 25%;
-    width: 12%;
-    height: 90%; }
   .flex1 {
     display: flex;
     flex-flow: column;
     width: 100%;
     height: 56%; }
   .DivSlogan {
-    transform: translate(0, 500%);
+    transform: translate(0, 200%);
     margin-top: 0%;
     font-size: 120%; }
   form {
@@ -290,7 +291,9 @@ input {
   .marginFormulario {
     margin-top: 8%; }
   .estiloRedes {
-    margin-top: 0%; } }
+    margin-top: 0%; }
+  .section-vehiculo {
+    height: 55vh; } }
 
 /*Desktop*/
 @media (min-width: 1024px) {
@@ -309,9 +312,6 @@ input {
     margin-top: 0%;
     width: 100%;
     height: 50%; }
-  header img {
-    width: 7%;
-    margin-left: 37%; }
   div {
     display: block;
     width: 100%; }
@@ -350,9 +350,8 @@ input {
     margin-left: calc(3 * var(--bs-gutter-x)); }
   /*Estilos adcionales html nosotros*/
   .DivSlogan {
-    transform: translate(0, 400%);
-    margin-top: 0%;
-    font-size: 120%; }
+    margin-top: 6%;
+    font-size: 150%; }
   /*Implementando flex para acomodar el contenido con el fin
 esperado*/
   .flex1 {
@@ -375,7 +374,7 @@ esperado*/
   input {
     margin-top: 2%; }
   .estiloRedes {
-    margin-top: 2%; }
+    margin-top: 5%; }
   .redes {
     align-content: center; }
     .redes a {
@@ -428,4 +427,6 @@ esperado*/
     border-radius: 4px;
     margin-top: 0%;
     margin-left: 1%;
-    text-align: center; } }
+    text-align: center; }
+  .section-vehiculo {
+    margin-top: 2%; } }
